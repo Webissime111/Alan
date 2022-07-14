@@ -22,8 +22,15 @@ header  {
 }
 
 .header__nav ul {
-  display: flex;
   list-style-type: none;
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .header__nav ul {
+    flex-direction: column;
+    /* à remplacer par un bouton menu et des menus verticaux */
+  }
 }
 
 .header__nav ul li a  {
@@ -41,13 +48,101 @@ header  {
 .header__nav ul li:not(:last-child)::after {
   content: "\2764";
   margin: 0.5em;
-  
 }
 
-/* 1er bloc */
+.header__submenu ul {
+  display: none;
+}
 
-.bloc-1 {
+.header__nav ul li a:hover.header__submenu  {
+  /* fait apparaître une barre de sous-menu */
+}
+
+/* 1e section : partenaire */
+
+.partenaire {
   position: relative;
-  top: 120px;
+  top: 150px;
   z-index: -1;
+}
+
+.partenaire__haut {
+  display: flex;
+  /* justify-content: space-evenly; */ 
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+.partenaire__haut h1  {
+  padding: 1em;
+}
+
+.partenaire__haut strong  {
+  color: rgb(34,227,158);
+  font-weight: 600;
+  padding-left: 0.2em;
+}
+
+.partenaire__images {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  padding: 0.5em;
+}
+
+.partenaire__images img  {
+  width: 250px;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .partenaire__haut  {
+    flex-direction: column;
+  }
+  .partenaire__images img {
+    width: 330px;
+  };
+}
+
+@media screen and (max-width: 800px) {
+  .partenaire__haut {
+    /* display: block; */
+    /* flex-direction: column; */
+    /* à remplacer par un bouton menu et des menus verticaux */
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .partenaire__images {
+    flex-direction: column;
+    /* justify-content: flex-start; */
+  }
+  .partenaire__haut h1  {
+    padding: 0;
+  }
+  .partenaire__images img {
+    width: 400px;
+  }
+}
+
+
+
+/* @media screen and (max-width: 1000px) and (min-width: 800px) {
+  .partenaire__images img {
+    width: 200px;
+  }
+  .partenaire__haut h1  {
+    padding-top: 0;
+  }
+} */
+
+.partenaire__bandeau {
+  text-align: center;
+}
+
+/* 2 section : offres */
+
+.offres {
+  position: relative;
+  top: 170px;
 }

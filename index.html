@@ -25,10 +25,17 @@
     <nav class="header__nav">
       <ul>
         <li><a href="#">Nos offres</a></li>
-        <li><a href="#">Témoignages</a></li>
-        <li><a href="#">Pour nos membres</a></li>
-        <li><a href="#">Ressources</a></li>
-        <li><a href="#">A propos d'Alan</a></li>
+        <li class="header__submenu">
+          <a href="#">Encore plus</a>
+          <ul>
+            <li><a href="#">Pour nos membres</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">A propos d'Alan</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#">Pour nos membres</a></li> -->
+        <!-- <li><a href="#">Ressources</a></li> -->
+        <!-- <li><a href="#">A propos d'Alan</a></li> -->
         <li><a class="header__btn" href="#">Me connecter</a></li>
       </ul>
     </nav>
@@ -36,15 +43,24 @@
 
   <main>
     <!-- Début 1e section -->
-    <section class="bloc-1">
-      <h1>Votre partenaire santé <strong>tout-en-un.</strong></h1>
-      <p>De l’assurance santé au bien-être mental en passant par sa clinique virtuelle, Alan propose une solution complète pour les entreprises de toutes tailles et les indépendants.</p>
-      <a href="#">Découvrir les offres</a>
-      <img src="./images/laptop-mockup.jpg" alt="Tableau de bord d'Alan.com sur ordinateur" width="400">
-      <img src="./images/waving.svg" alt="Image de l'ours mascotte du site" width="400">
-      <img src="./images/phone-with-mockup.png" alt="Tableau de bord d'Alan.com sur mobile" width="300">
+    <section class="partenaire">
+      <div class="partenaire__haut">
+        <div>
+          <h1>Votre partenaire santé <strong>tout-en-un.</strong></h1>
+          <p>De l’assurance santé au bien-être mental en passant par sa clinique virtuelle, Alan propose une solution complète pour les entreprises de toutes tailles et les indépendants.</p>
+          <a href="#">Découvrir les offres</a>
+        </div>
+        <div class="partenaire__images">
+          <div>
+            <img src="./images/laptop-mockup.jpg" alt="Tableau de bord d'Alan.com sur ordinateur">
+            <img src="./images/waving.svg" alt="Image de l'ours mascotte du site">
+          </div>
+          <img src="./images/phone-with-mockup.png" alt="Tableau de bord d'Alan.com sur mobile">
+        </div>
+      </div>
+
       <!-- Début bandeau en bas de 1e section -->
-      <div>
+      <div class="partenaire__bandeau">
         <img src="./images/JustEat.svg" alt="Logo de JustEat dans le bandeau" width="120">
         <img src="./images/MeilleursAgents.svg" alt="Logo des meilleurs agents dans le bandeau" width="120">
         <img src="./images/Deliveroo.svg" alt="Logo de Deliveroo dans le bandeau" width="120">
@@ -57,7 +73,7 @@
     <!-- Fin 1e section -->
 
     <!-- Début 2e section -->
-    <section>
+    <section class="offres">
       <h2>Trouvez l’offre <strong>pensée pour vous.</strong></h2>
       <p>
         👋 Salarié(e) d'une entreprise qui a rejoint Alan ?
