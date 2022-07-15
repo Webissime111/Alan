@@ -28,7 +28,7 @@ header  {
 
 @media screen and (max-width: 700px) {
   .header__nav ul {
-    flex-direction: column;
+    display: none;
     /* à remplacer par un bouton menu et des menus verticaux */
   }
 }
@@ -54,6 +54,10 @@ header  {
   display: none;
 }
 
+.header__submenu ul:hover {
+  display: block;
+}
+
 .header__nav ul li a:hover.header__submenu  {
   /* fait apparaître une barre de sous-menu */
 }
@@ -68,13 +72,16 @@ header  {
 
 .partenaire__haut {
   display: flex;
-  /* justify-content: space-evenly; */ 
-  padding-left: 2em;
-  padding-right: 1em;
+  padding-left: 3em;
+  padding-right: 2em;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .partenaire__haut h1  {
   padding: 1em;
+  padding-left: 0;
+  font-size: 1.6em;
 }
 
 .partenaire__haut strong  {
@@ -85,9 +92,8 @@ header  {
 
 .partenaire__images {
   display: flex;
-  /* justify-content: flex-start; */
   align-items: center;
-  padding: 0.5em;
+  padding-left: 2em;
 }
 
 .partenaire__images img  {
@@ -100,41 +106,49 @@ header  {
   .partenaire__haut  {
     flex-direction: column;
   }
+
+  .partenaire__images div {
+    flex: 1;
+    text-align: center;
+  }
+  
   .partenaire__images img {
     width: 330px;
-  };
+  }
 }
 
 @media screen and (max-width: 800px) {
+  
   .partenaire__haut {
-    /* display: block; */
-    /* flex-direction: column; */
-    /* à remplacer par un bouton menu et des menus verticaux */
     padding-left: 1em;
-    padding-right: 0.5em;
+    text-align: center;
   }
+
   .partenaire__images {
     flex-direction: column;
-    /* justify-content: flex-start; */
   }
-  .partenaire__haut h1  {
-    padding: 0;
-  }
+
   .partenaire__images img {
     width: 400px;
   }
 }
 
-
-
-/* @media screen and (max-width: 1000px) and (min-width: 800px) {
-  .partenaire__images img {
-    width: 200px;
+@media screen and (min-width: 1250px) {
+  .partenaire__haut {
+    padding-left: 4em;
+    padding-right: 2.5em;
+    font-size: 1.2em;
   }
   .partenaire__haut h1  {
-    padding-top: 0;
+    font-size: 1.8em;
   }
-} */
+  .partenaire__images {
+    padding-left: 2.5em;
+  }
+  .partenaire__images img {
+    width: 330px;
+  }
+}
 
 .partenaire__bandeau {
   text-align: center;
