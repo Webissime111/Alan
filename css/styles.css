@@ -9,7 +9,8 @@ body  {
 
 header  {
   background-color: rgba(238, 240, 239, 0.75);
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 90px;
   display: flex;
@@ -21,52 +22,68 @@ header  {
   width: 200px;
 }
 
-.header__nav ul {
+.header__nav>ul {
   list-style-type: none;
   display: flex;
 }
 
 @media screen and (max-width: 700px) {
-  .header__nav ul {
+  .header__nav>ul {
     display: none;
     /* à remplacer par un bouton menu et des menus verticaux */
   }
 }
 
-.header__nav ul li a  {
+.header__nav>ul>li>a  {
   color: rgb(83, 79, 79);
   padding: 0.5em;
 }
 
-.header__nav ul li a:hover  {
+.header__nav>ul>li>a:hover  {
   color: rgb(19, 19, 184);
   background-color: rgb(255, 255, 255);
   border-radius: 1em;
   box-shadow: 0 0 1em rgb(128, 128, 128);
 }
 
-.header__nav ul li:not(:last-child)::after {
+.header__nav>ul>li:not(:last-child)>a::after {
   content: "\2764";
   margin: 0.5em;
 }
 
-.header__submenu ul {
+.header__subnav, #header__subnav {
+  width: 100%;
+  list-style-type: none;
+  background-color: rgba(238, 240, 239, 0.75);
   display: none;
 }
 
-.header__submenu ul:hover {
-  display: block;
+.header__dropdown:hover > .header__subnav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 80px;
+  right: 0px;
 }
 
-.header__nav ul li a:hover.header__submenu  {
-  /* fait apparaître une barre de sous-menu */
+.header__subnav li a  {
+  color: rgb(83, 79, 79);
+  padding: 0.5em;
+  padding-right: 2em;
+}
+
+.header__subnav li a:hover  {
+  color: rgb(19, 19, 184);
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgb(128, 128, 128);
 }
 
 /* 1e section : partenaire */
 
 .partenaire {
   position: relative;
-  top: 150px;
+  top: 50px;
   z-index: -1;
 }
 
