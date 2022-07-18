@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Copycat - Alan</title>
+
+  <!-- Début import Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Fin import Google fonts -->
+
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
+
+  <header>
+    <a href="./index.html"><img class="header__logo" src="./images/logo-alan.png" alt="Logo de alan.com"></a>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Nos offres</a></li>
+        <li class="header__dropdown">
+          <a href="#header__subnav">Autres options</a>
+          <ul class="header__subnav">
+            <li><a href="#">Pour nos membres</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">A propos d'Alan</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Me connecter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Début 1e section -->
+    <section class="partenaire">
+      <div class="partenaire__haut">
+        <div>
+          <h1>Votre partenaire santé <strong>tout-en-un.</strong></h1>
+          <p>De l’assurance santé au bien-être mental en passant par sa clinique virtuelle, Alan propose une solution complète pour les entreprises de toutes tailles et les indépendants.</p>
+          <a href="#">Découvrir les offres</a>
+        </div>
+        <div class="partenaire__images">
+          <div>
+            <img src="./images/laptop-mockup.jpg" alt="Tableau de bord d'Alan.com sur ordinateur">
+            <img src="./images/waving.svg" alt="Image de l'ours mascotte du site">
+          </div>
+          <div>
+            <img src="./images/phone-with-mockup.png" alt="Tableau de bord d'Alan.com sur mobile">
+          </div>
+        </div>
+      </div>
+
+      <!-- Début bandeau en bas de 1e section -->
+      <div class="partenaire__bandeau">
+        <img src="./images/JustEat.svg" alt="Logo de JustEat dans le bandeau" width="120">
+        <img src="./images/MeilleursAgents.svg" alt="Logo des meilleurs agents dans le bandeau" width="120">
+        <img src="./images/Deliveroo.svg" alt="Logo de Deliveroo dans le bandeau" width="120">
+        <img src="./images/PeopleAndBaby.svg" alt="Logo de People & Baby dans le bandeau" width="120">
+        <img src="./images/Intermarche.svg" alt="Logo de Intermarche dans le bandeau" width="120">
+        <img src="./images/Netatmo.svg" alt="Logo de Netatmo dans le bandeau" width="120">
+      </div>
+      <!-- Fin bandeau en bas de 1e section -->
+    </section>
+    <!-- Fin 1e section -->
+
+    <!-- Début 2e section -->
+    <section class="offres">
+      <h2>Trouvez l’offre <strong>pensée pour vous.</strong></h2>
+      <p>
+        👋 Salarié(e) d'une entreprise qui a rejoint Alan ?
+        <a href="#">Découvrez comment vous inscrire</a>
+      </p>
+      <ul>
+        <li>
+          <div>
+            <img src="./images/emoji-fusée.svg" alt="Emoticone de fusée">
+            <h3>Startups & PME</h3>
+          </div>
+          <p>Gagnez du temps sur la gestion de votre assurance santé et offrez un véritable avantage à vos salariés.</p>
+        </li>
+        <li>
+          <div>
+            <img src="./images/emoji-immeuble.svg" alt="Emoticone d'immeuble">
+            <h3>Grandes entreprises</h3>
+          </div>
+          <p>Automatisez les tâches administratives et faites du bien-être un axe RH stratégique.</p>
+        </li>
+        <li>
+          <div>
+            <img src="./images/emoji-cuisine.svg" alt="Emoticone de restaurant">
+            <h3>Hôtels et restaurants</h3>
+          </div>
+          <p>Simplifiez-vous la gestion de l’assurance santé et donnez accès à la santé à vos salariés.</p>
+        </li>
+        <li>
+          <div>
+            <img src="./images/emoji-artiste.svg" alt="Emoticone d'artiste-peintre">
+            <h3>Indépendants</h3>
+          </div>
+          <p>Oubliez la paperasse et profitez d’une couverture santé complète pour un reste à charge minimal.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Fin 2e section -->
+  </main>
   
 </body>
 </html>
